@@ -1,0 +1,119 @@
+.course{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+
+
+
+.course h1{
+	font-size: 41px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.course  table th{
+	padding-right: 40px;
+	font-weight: bold;
+	color: blue;
+	font-size: 1.75rem;
+
+	
+	
+}
+
+
+.course table {
+	margin-left: 10px;
+	margin-bottom: 100px;
+	
+	
+	
+}
+.course  table td{
+	font-size: 1.5rem
+	}
+.course h2{
+		padding-left: 50px;
+	
+	color: gray;
+	font-size: 3rem;
+	margin-top: 50PX;
+}
+.course h3{
+	padding-left: 50px;
+	
+	color: gray;
+	font-size: 2rem;
+	margin-top: 50PX;
+}
+.course.image{
+	padding-top: 40px;
+}
+.course h4{
+	color: gray;
+	font-size: 2rem;
+	margin-top: 50PX;
+
+}
+.instructor{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.instructor h1{
+
+font-size: 41px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.instructor h2{
+	padding-left: 50px;
+	font-weight: bold;
+	font-size:30px;
+	margin-top: 20PX;
+	line-height: 40px;
+
+}
+
+/*paragraph*/
+.course p{
+		padding-left: 10px;
+	padding-top: 5px;
+	color: gray;
+	margin-bottom: 100px;
+}
+#back-top {
+	background-color: #4ce0cc;
+}
+.header-bottom.header-sticky{
+	background: #2C2E2F;
+}
+
+.footer-social a:hover{
+	background:#4ce0cc ;
+}
+.about-area1 .support-wrapper .left-content1 .about-icon{
+	background: #2C2E2F;
+
+}
+.mobile_menu .slicknav_menu .slicknav_nav{
+	background:#2C2E2F ;
+}
+.slicknav_nav a{
+	color: white;
+}
+.mobile_menu .slicknav_menu .slicknav_nav a:hover {
+    background: transparent;
+    color: #4ce0cc;
+}
+.right-img{
+	padding-top: 40px;
+}

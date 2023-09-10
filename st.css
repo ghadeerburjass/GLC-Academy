@@ -1,0 +1,47 @@
+
+.intro{
+	display: flex;
+	height: 20vh;
+	font-size: 1rem;
+	
+
+}
+.typing{
+	position: relative;
+	margin-left:10px; 
+
+}
+.typing::after{
+	content:"";
+	position: absolute;
+	width: 1px;
+	height: 5%;
+	border-right: 2px solid white;
+	right: -5px;
+	animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+0%{
+	opacity:0;
+}
+100%{
+	opacity:1;
+}
+}
+.logoes{
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.logoes h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 41px;
+}
+.logoes img{
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+

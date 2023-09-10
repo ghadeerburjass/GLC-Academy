@@ -1,0 +1,141 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+<?php
+/*
+// mysql_connect("database-host", "username", "password")
+$conn = mysql_connect("localhost","root","root") 
+            or die("cannot connected");
+ 
+// mysql_select_db("database-name", "connection-link-identifier")
+@mysql_select_db("test",$conn);
+*/
+ 
+/**
+ * mysql_connect is deprecated
+ * using mysqli_connect instead
+ */
+ 
+$databaseHost = 'localhost';
+$databaseName = 'test';
+$databaseUsername = 'root';
+$databasePassword = 'root';
+ 
+$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+?>
+To add data into database, we need an html form.
+
+add.html
+
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+
+<body>
+    <a href="index.php">Home</a>
+    <br/><br/>
+
+    <form action="add.php" method="post" name="form1">
+        <table width="25%" border="0">
+            <tr> 
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr> 
+                <td>Age</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr> 
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+ 
+<body>
+    <a href="index.php">Home</a>
+    <br/><br/>
+ 
+    <form action="add.php" method="post" name="form1">
+        <table width="25%" border="0">
+            <tr> 
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr> 
+                <td>Age</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr> 
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html

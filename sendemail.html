@@ -1,0 +1,32 @@
+<HTML>
+<Head>
+<Script Language=JavaScript>
+
+function sendMail(isForm){
+
+	isBody = "";
+	recipient = "me@someDomain.com";
+	isSubject = "Form Data";
+	isBody = "Name: " + isForm.personal.value +" --- ";
+	isBody += "Address: " + isForm.address.value +" --- ";
+	isBody += "City: " + isForm.city.value +" --- ";
+	isBody += "State: " + isForm.state.value +" --- ";
+	isBody += "Zip: " + isForm.zip.value;
+	document.forms.Send.action = "mailto:"+recipient+"?subject="+isSubject+"&body="+isBody+"&nbsp"
+
+}
+</Script>
+</Head>
+<Body>
+<form name='Form1'>
+Name <input name='personal' size=25><br>
+Address <input name='address' size=30><br>
+City <input name='city' size=15> State <input name='state' size=2><br>
+Zip Code <input name='zip' size=4><br>
+<input type=Reset>
+</form>
+<form name='Send' action=''>
+<input type="submit" value="Send by Email" onclick="sendMail(document.Form1)">
+</form>
+</Body>
+</HTML>
